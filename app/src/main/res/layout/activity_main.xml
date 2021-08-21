@@ -1,18 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_gravity="center"
+    android:background="@drawable/images"
+    tools:ignore="ExtraText">
 
-    <TextView
+    <Button
+        android:id="@+id/key_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/key_1"
+
+        app:layout_constraintEnd_toStartOf="@id/key_2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/key_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_2"
+        app:layout_constraintEnd_toStartOf="@id/key_3"
+        app:layout_constraintStart_toEndOf="@id/key_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/key_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_3"
+        app:layout_constraintEnd_toEndOf="@id/key_sum"
+        app:layout_constraintStart_toEndOf="@id/key_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/key_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_sum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key_3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/key_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_4"
+
+        app:layout_constraintEnd_toStartOf="@id/key_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key_1" />
+
+    <Button
+        android:id="@+id/key_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_5"
+        app:layout_constraintEnd_toStartOf="@id/key_6"
+        app:layout_constraintStart_toEndOf="@id/key_4"
+        app:layout_constraintTop_toBottomOf="@id/key_2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/key_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_6"
+        app:layout_constraintEnd_toEndOf="@id/key_sub"
+        app:layout_constraintStart_toEndOf="@id/key_5"
+        app:layout_constraintTop_toBottomOf="@id/key_3" />
+
+    <Button
+        android:id="@+id/key_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key_6"
+        app:layout_constraintTop_toBottomOf="@id/key_sum" />
+
+    <Button
+        android:id="@+id/key_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_7"
+        app:layout_constraintEnd_toStartOf="@id/key_8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key_4" />
+
+    <Button
+        android:id="@+id/key_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/key_7"
+        app:layout_constraintStart_toStartOf="@id/key_5"
+        app:layout_constraintTop_toBottomOf="@id/key_5" />
+
+    <Button
+        android:id="@+id/key_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_9"
+        app:layout_constraintEnd_toEndOf="@id/key_mul"
+        app:layout_constraintStart_toStartOf="@id/key_5"
+        app:layout_constraintTop_toBottomOf="@id/key_6" />
+
+    <Button
+        android:id="@+id/key_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_mul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key_9"
+        app:layout_constraintTop_toBottomOf="@id/key_sub" />
+
+    <Button
+        android:id="@+id/key_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/key_0"
+        app:layout_constraintEnd_toEndOf="@id/key_8"
+        app:layout_constraintStart_toStartOf="@id/key_7"
+        app:layout_constraintTop_toBottomOf="@id/key_7" />
+
+    <Button
+        android:id="@+id/key_drop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_drop"
+        app:layout_constraintEnd_toEndOf="@id/key_mul"
+        app:layout_constraintStart_toStartOf="@id/key_8"
+        app:layout_constraintTop_toBottomOf="@id/key_9" />
+
+    <Button
+        android:id="@+id/key_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key_drop"
+        app:layout_constraintTop_toBottomOf="@id/key_mul" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
