@@ -15,4 +15,9 @@
     <string name="key_mul">*</string>
     <string name="key_div">/</string>
     <string name="key_drop">.</string>
+    <string name="result"></string>
+    <string name="operaiotField">operation</string>
+    <string name="numberField1">num1</string>
+    <string name="numberField2">num2</string>
+    <string name="equals">=</string>
 </resources>
