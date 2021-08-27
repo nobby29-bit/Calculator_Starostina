@@ -6,15 +6,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/images"
+    android:background="@drawable/gratis"
     tools:ignore="ExtraText">
+
+
+    <EditText
+        android:id="@+id/operaiotField"
+        android:layout_width="86dp"
+        android:layout_height="59dp"
+        android:layout_margin="150dp"
+        android:text="@string/operaiotField"
+
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/numberField1"
+        android:layout_width="144dp"
+        android:layout_height="59dp"
+        android:layout_margin="150dp"
+        android:text="@string/numberField1"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/numberField2"
+        android:layout_width="144dp"
+        android:layout_height="59dp"
+        android:layout_margin="150dp"
+        android:text="@string/numberField2"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="377dp"
+        android:layout_height="65dp"
+        android:layout_margin="150dp"
+        android:text="Result"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="379dp"
+        android:layout_height="57dp"
+        android:background="#808080"
+        android:text="@string/equals"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="550dp" />
 
     <Button
         android:id="@+id/key_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:background="#808080"
         android:text="@string/key_1"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/key_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/key_2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/key_3"
         app:layout_constraintStart_toEndOf="@id/key_1"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,6 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/key_3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/key_sum"
         app:layout_constraintStart_toEndOf="@id/key_2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,6 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/key_sum"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/key_3"
         app:layout_constraintTop_toTopOf="parent" />
